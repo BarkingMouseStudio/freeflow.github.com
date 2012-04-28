@@ -1,10 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <title>FreeFlow on Github</title>
+  <meta charset="UTF-8">
+  <title>FreeFlow</title>
+
+  <link href="favicon.ico" rel="shortcut icon">
+
+  <link href="http://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet" type="text/css">
+  <link href="styles/styles.css" rel="stylesheet" type="text/css">
+  <script src="scripts/dependencies/underscore.js"></script>
+  <script src="scripts/dependencies/jquery.js"></script>
+  <script src="scripts/main.js"></script>
+
 </head>
 <body>
-  <h1>FreeFlow</h1>
+
+  <section>
+
+    <ul class="slideshow">
+      <li class="first">
+        <h1><img src="images/logo.png" alt="FreeFlow logo"> FreeFlow</h1>
+      </li>
+      <li class="second">
+        <div class="image">
+          <img src="images/slideshow-1.jpg" alt="FreeFlow screenshot">
+        </div>
+        <div class="description">
+          <h2>Personalized.</h2>
+          <h3>Connect with <em>your</em> friends across Facebook, Twitter and Google.</h3>
+          <a href="https://love.freeflow.io" class="learn">Learn more</a>
+        </div>
+      </li>
+      <li class="third">
+        <div class="image">
+          <img src="images/slideshow-2.jpg" alt="FreeFlow screenshot">
+        </div>
+        <div class="description">
+          <h2>Beautiful.</h2>
+          <h3>Browse a beautiful photo mosaic of shared content.</h3>
+          <a href="https://love.freeflow.io" class="learn">Learn more</a>
+        </div>
+      </li>
+      <li class="fourth">
+        <div class="image">
+          <img src="images/slideshow-3.jpg" alt="FreeFlow screenshot">
+        </div>
+        <div class="description">
+          <h2>Simple.</h2>
+          <h3>Get started with a single click.</h3>
+          <a href="https://love.freeflow.io" class="learn">Learn more</a>
+        </div>
+      </li>
+    </ul>
+
+  </section>
+
+  <section>
+  
+    <ul class="columns">
+
+      <li>
+        <h3>Reddish</h3>
+        <p>
+          <strong>Reddish is a GUI for redis</strong> that will provide powerful real-time data analytics.
+          Visually administer your data stores with any redis command and monitor the state of your stores with dynamic updates.
+        </p>
+        <a href="https://reddi.sh" class="learn">Learn more</a>
+      </li>
+
+      <li>
+        <h3>Gemini Command</h3>
+        <p>
+          <strong>Gemini Command is a fast-paced, real-time multiplayer game!</strong>
+          Challenge your friends and either defend your homeworld or seize its resources.
+        </p>
+        <a href="http://gemini.freeflow.io" class="learn">Play now!</a>
+      </li>
+
+      <li>
+        <h3>Contact Us</h3>
+        <p><strong>We are a talented team of web designers and developers</strong> focused on creating modern, real-time web applications.</p>
+        <a href="mailto:us@freeflow.io" class="learn">Contact us</a>
+      </li>
+
+    </ul>
+
+  </section>
+
+  <footer>&copy; 2011 FreeFlow Labs, LLC</footer>
+
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-22644328-1']);
+    _gaq.push(['_setDomainName', 'freeflow.io']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
 </body>
 </html>

@@ -1,0 +1,62 @@
+// BORDER RADIUS
+
+.border_radius(@radius: 10px) {
+  .border_radius(@radius, @radius);
+}
+
+.border_radius(@radius_top: 10px, @radius_bottom: 10px) {
+  .border_radius(@radius_top, @radius_top, @radius_bottom, @radius_bottom);
+}
+
+.border_radius(@top_left: 10px, @top_right: 10px, @bottom_right: 10px, @bottom_left: 10px) {
+  -webkit-background-clip: padding-box;
+  -webkit-border-radius: @top_left @top_right @bottom_right @bottom_left;
+  -moz-background-clip: padding-box;
+  -moz-border-radius: @top_left @top_right @bottom_right @bottom_left;
+  background-clip: padding-box;
+  border-radius: @top_left @top_right @bottom_right @bottom_left;
+}
+
+
+// TEXT SHADOW
+
+.text_shadow(@color: #444, @x: 0, @y: 1px) {
+  text-shadow: @x @y @color;
+}
+
+
+// BOX SHADOW
+
+.box_shadow(@x: 3px, @y: 3px, @radius: 3px, @color: #888) {
+  -webkit-box-shadow: @x @y @radius @color;
+  -moz-box-shadow: @x @y @radius @color;
+  box-shadow: @x @y @radius @color;
+}
+ 
+
+// OPACITY
+
+.opacity(@opacity: 1) {
+  -moz-opacity: @opacity;
+  -khtml-opacity: @opacity;
+  opacity: @opacity;
+}
+
+ 
+// GRADIENT
+
+.gradient(@from: #000, @to: #eee) {
+  background: @from;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(@from), to(@to));
+  background-image: -moz-linear-gradient(top, @from, @to);
+}
+
+
+// TRANSITION
+
+.transition(@range: all, @time: 1s, @ease: ease-in-out) {
+  -moz-transition: @range @time @ease;
+  -webkit-transition: @range @time @ease;
+  -o-transition: @range @time @ease;
+  transition: @range @time @ease;
+}
